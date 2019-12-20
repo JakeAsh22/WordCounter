@@ -41,7 +41,7 @@ Please clone this repo to use the application.  After cloning, use dotnet restor
 email: jacob.ash1998@gmail.com
 
 ## Technologies Used
-_Git, GitHub, C# and .NET Core
+_Git, GitHub, C# and .NET Core_
 
 
 ## License
