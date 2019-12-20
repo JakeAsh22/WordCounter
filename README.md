@@ -14,7 +14,7 @@ There should be one class: `Word Counter`.
 
 When the user runs the application, they will recieve a message asking for both the key word and the sentence.  If they run the tests, it should display that all of the tests work properly.
 
-THe user should be able to type any word, or any sentence they would like as long as it does not contain numbers.
+The user should be able to type any word, or any sentence they would like as long as it does not contain numbers.
 
 The application will return how many times that word is in the sentence.
 
