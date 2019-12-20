@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-//using WordCounting;
+using WordCounting;
 
 namespace WordCountingTests
 {
@@ -9,9 +9,9 @@ namespace WordCountingTests
         [TestMethod]
         public void WordCounting_GetResult_NotAWord()
         {
-            // Counter count1 = new Counter ("1", "1111111");
-            // string result = count1.RepeatCounter();
-            // Assert.AreEqual("Please only use letters", result);
+            WordCounter count1 = new WordCounter ("1", "1111111");
+            string result = count1.RepeatCounter();
+            Assert.AreEqual("Please only use letters", result);
 
         }
     }
