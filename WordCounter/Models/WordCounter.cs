@@ -23,10 +23,16 @@ namespace WordCounting
             string lowerWord = _word.ToLower();
             string lowerSentence = _sentence.ToLower();
 
+            for (int i = 0; i<lowerWord.Length;i++)
+            {
+                if (numbers.Contains(lowerWord[i]))
+                    return "Please only use letters in your key word";
+            }
+
             for (int i =0; i<lowerSentence.Length;i++)
             {
                 if (numbers.Contains(lowerSentence[i]))
-                    return "Please only use letters";
+                    return "Please only use letters in your sentence";
                 if (punt.Contains(lowerSentence[i]))
                     lowerSentence.Remove(i,1);
             }

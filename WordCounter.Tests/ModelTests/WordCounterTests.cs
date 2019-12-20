@@ -8,11 +8,20 @@ namespace WordCountingTests
     {
 
         [TestMethod]
-        public void WordCounting_GetResult_NotAWord()
+        public void WordCounting_GetResult_NotAWordInSentence()
         {
-            WordCounter count1 = new WordCounter ("1", "1111111");
+            WordCounter count1 = new WordCounter ("hello", "1111111");
             string result = count1.RepeatCounter();
-            Assert.AreEqual("Please only use letters", result);
+            Assert.AreEqual("Please only use letters in your sentence", result);
+
+        }
+
+        [TestMethod]
+        public void WordCounting_GetResult_NotAWordInKeyWord()
+        {
+            // WordCounter count1 = new WordCounter ("1", "hello");
+            // string result = count1.RepeatCounter();
+            // Assert.AreEqual("Please only use letters in your key word", result);
 
         }
 
@@ -31,7 +40,7 @@ namespace WordCountingTests
             string result = count1.RepeatCounter();
             Assert.AreEqual("3", result);
         }
-        
+
         [TestMethod]
         public void WordCounting_GetResult_OnlyChecksForFullWords()
         {
