@@ -1,6 +1,6 @@
 # Word Counter
 
-#### _C#, .NET: Pierre Bakery, 12/16/2019_
+#### _C#, .NET: Word Counter, 12/20/2019_
 
 #### Contributors
 _**Jacob Ash**_
