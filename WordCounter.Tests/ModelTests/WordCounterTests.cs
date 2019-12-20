@@ -14,5 +14,10 @@ namespace WordCountingTests
             Assert.AreEqual("Please only use letters", result);
 
         }
+        [TestMethod]
+        public void WordCounting_GetResult_OneMatchingWord()
+        {
+            
+        }
     }
 }
