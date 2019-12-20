@@ -27,7 +27,9 @@ namespace WordCountingTests
         [TestMethod]
         public void WordCounting_GetResult_EveryMatchingWordInSentence()
         {
-            
+            WordCounter count1 = new WordCounter ("cat", "cat cat cat dog");
+            string result = count1.RepeatCounter();
+            Assert.AreEqual("3", result);
         }
     }
 }

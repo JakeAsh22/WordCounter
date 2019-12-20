@@ -8,6 +8,7 @@ namespace WordCounting
         private string _sentence;
          int count = 0;
         string numbers = "0123456789";
+        string punt = ".,;!?;:'";
 
         public WordCounter(string word, string sentence)
         {
@@ -17,17 +18,26 @@ namespace WordCounting
 
         public string RepeatCounter()
         {
+            
             string lowerWord = _word.ToLower();
             string lowerSentence = _sentence.ToLower();
+
             for (int i =0; i<lowerSentence.Length;i++)
             {
                 if (numbers.Contains(lowerSentence[i]))
                     return "Please only use letters";
+                if (punt.Contains(lowerSentence[i]))
+                    lowerSentence.Remove(i,i);
             }
-            if (lowerSentence.Contains(lowerWord))
+
+            string[] sentenceArr = lowerSentence.Split(' ');
+
+            foreach (string word in sentenceArr)
             {
-                count++;
+                if (word.Contains(lowerWord))
+                    count++;
             }
+            
             return count.ToString();
         }
     }
