@@ -6,9 +6,10 @@ namespace WordCounting
     {
         private string _word;
         private string _sentence;
-         int count = 0;
+        int count = 0;
         string numbers = "0123456789";
         string punt = ".,;!?;:'";
+        // string characters = "abcdefghijklmnopqrstuvwxyz";
 
         public WordCounter(string word, string sentence)
         {
@@ -27,14 +28,14 @@ namespace WordCounting
                 if (numbers.Contains(lowerSentence[i]))
                     return "Please only use letters";
                 if (punt.Contains(lowerSentence[i]))
-                    lowerSentence.Remove(i,i);
+                    lowerSentence.Remove(i,1);
             }
 
             string[] sentenceArr = lowerSentence.Split(' ');
 
             foreach (string word in sentenceArr)
             {
-                if (word.Contains(lowerWord))
+                if (word==lowerWord)
                     count++;
             }
             

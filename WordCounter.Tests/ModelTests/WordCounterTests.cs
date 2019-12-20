@@ -32,9 +32,11 @@ namespace WordCountingTests
             Assert.AreEqual("3", result);
         }
          [TestMethod]
-        public void WordCounting_GetResult_EveryMatchingWordInSentence()
+        public void WordCounting_GetResult_OnlyChecksForFullWords()
         {
-            
+            WordCounter count1 = new WordCounter ("cat", "I'm walking to the cathedral.");
+            string result = count1.RepeatCounter();
+            Assert.AreEqual("0", result);
         }
     }
 }
