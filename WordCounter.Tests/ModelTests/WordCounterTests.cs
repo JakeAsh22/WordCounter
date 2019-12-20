@@ -31,7 +31,8 @@ namespace WordCountingTests
             string result = count1.RepeatCounter();
             Assert.AreEqual("3", result);
         }
-         [TestMethod]
+        
+        [TestMethod]
         public void WordCounting_GetResult_OnlyChecksForFullWords()
         {
             WordCounter count1 = new WordCounter ("cat", "I'm walking to the cathedral.");
