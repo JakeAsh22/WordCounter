@@ -31,5 +31,10 @@ namespace WordCountingTests
             string result = count1.RepeatCounter();
             Assert.AreEqual("3", result);
         }
+         [TestMethod]
+        public void WordCounting_GetResult_EveryMatchingWordInSentence()
+        {
+            
+        }
     }
 }
