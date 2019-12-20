@@ -6,7 +6,7 @@ namespace WordCounting
     {
         private string _word;
         private string _sentence;
-        private int _wordCount;
+         int count = 0;
         string numbers = "0123456789";
 
         public WordCounter(string word, string sentence)
@@ -24,7 +24,11 @@ namespace WordCounting
                 if (numbers.Contains(lowerSentence[i]))
                     return "Please only use letters";
             }
-            return "Placeholder";
+            if (lowerSentence.Contains(lowerWord))
+            {
+                count++;
+            }
+            return count.ToString();
         }
     }
 }

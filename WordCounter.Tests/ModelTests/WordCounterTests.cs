@@ -17,7 +17,9 @@ namespace WordCountingTests
         [TestMethod]
         public void WordCounting_GetResult_OneMatchingWord()
         {
-            
+            WordCounter count1 = new WordCounter ("cat", "cat");
+            string result = count1.RepeatCounter();
+            Assert.AreEqual("1", result);
         }
     }
 }
