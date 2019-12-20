@@ -19,9 +19,9 @@ namespace WordCountingTests
         [TestMethod]
         public void WordCounting_GetResult_NotAWordInKeyWord()
         {
-            // WordCounter count1 = new WordCounter ("1", "hello");
-            // string result = count1.RepeatCounter();
-            // Assert.AreEqual("Please only use letters in your key word", result);
+            WordCounter count1 = new WordCounter ("1", "hello");
+            string result = count1.RepeatCounter();
+            Assert.AreEqual("Please only use letters in your key word", result);
 
         }
 
