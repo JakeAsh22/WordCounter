@@ -9,7 +9,6 @@ namespace WordCounting
         int count = 0;
         string numbers = "0123456789";
         string punt = ".,;!?;:'";
-        // string characters = "abcdefghijklmnopqrstuvwxyz";
 
         public WordCounter(string word, string sentence)
         {

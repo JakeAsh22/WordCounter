@@ -26,12 +26,19 @@ The application will return how many times that word is in the sentence.
 | "Inputs - Key Word: "cat" Sentence: "cat" | 1 |
 | "Inputs - Key Word: "cat" Sentence: "cat cat cat dog" | 3 |
 | "Inputs - Key Word: "cat" Sentence: "I'm walking to the cathedral." | 0 |
+* The first spec is to test to see if the sentence contains numbers.
+* The second spec is to test if the word contains numbers
+* the third spec tests if the word finder works with the keyword, and a sentence that only contains the key word
+* the fourth spec tests to see if the program counts multiple of the same words
+* The fifth spec tests to see if the program only counts whole words
 
 ## Setup/Installation Requirements
 
 Clone this repo:
 Please clone this repo to use the application.  After cloning, use dotnet restore inside the `ModelTests` and `WordCounter.Tests` folders to receieve the proper files.
 
+Link to GH repo:
+https://github.com/JakeAsh22/WordCounter
 
 ## Known Bugs
 * No known bugs at this time.

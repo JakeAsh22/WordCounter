@@ -6,6 +6,7 @@ namespace WordCounting
    {
        static void Main()
        {
+           
            Console.WriteLine("Please enter the word you would like to search the sentence for:");
            string word = Console.ReadLine();
            Console.WriteLine("Please enter the sentence:");
